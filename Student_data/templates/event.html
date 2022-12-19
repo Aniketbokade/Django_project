@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+{% block title%} ABOUT{% endblock title%}
+
+{% block body%}
+<h1>DATA</h1>
+
+<!-- {% for event in event_list%}
+ <strong> {{event}}</strong>
+<ul>
+    <li>Date: {{event.event_date}}</li>
+    <li>Venue: {{event.venue}}</li>
+    <li>Manager: {{event.manager}}</li>
+    <li>Description: {{event.description}}</li>
+    <li>Attendees:<br/>
+        <ol>
+    {% for user in event.attendees.all%}
+     <li>{{user}}</li>
+
+    {%endfor%}
+</ol>
+    </li>
+
+</ul>
+    {%endfor%} -->
+    </div">
+        <table class="table "
+            <thead class="thead-light">
+                <tr>
+                    <th scope="col">Student Name</th>
+                    <th scope="col">Reg. No.</th>
+                    <th scope="col">Branch</th>
+                    <th scope="col">Class</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for Admission in Admission_list%}
+                
+                  <tr>
+                    <form action="/event2" method="post" id="xyz">
+                        {% csrf_token %}
+                        <td>{{Admission.Student_name}}</td>
+                        <td>{{Admission.Reg_no}}</td>
+                        <td>{{Admission.Branch}}</td>
+                        <td>{{Admission.Class}}</td>
+                      
+                        <td><Button type="submit" name="name" value="{{Admission.Student_name}}" form="xyz">see more details</Button></td>
+                      </form>
+                  </tr>
+
+                {%endfor%}
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+{% endblock body%}

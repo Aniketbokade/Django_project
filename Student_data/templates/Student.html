@@ -1,0 +1,51 @@
+{% extends 'base.html'%}
+{% block title%} CONTACT{% endblock title%}
+
+{% block body%}
+<section id="log">
+
+    <h1>CONTACT US</h1><br>
+
+    <div class="container">
+        <form method="post" action="/Student">
+            {% csrf_token %}
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <label for="reg_no">Reg. No.</label>
+                <input type="reg_no" class="form-control" id="reg_no" name="reg_no" placeholder="Enter your reg_no">
+              </div>
+              <div class="form-group">
+                <label for="Photo">Photo</label>
+                <input type="Photo" class="form-control" id="Photo" name="Photo" placeholder="Upload your Photo">
+              </div>
+              <div class="form-group">
+                <label for="Taluka">Taluka</label>
+                <input type="Taluka" class="form-control" id="Taluka" name="Taluka" placeholder="Enter your Taluka">
+              </div>
+              <div class="form-group">
+                <label for="District">District</label>
+                <input type="District" class="form-control" id="District" name="District" placeholder="Enter your District">
+              </div>
+              <div class="form-group">
+                <label for="State">State</label>
+                <input type="State" class="form-control" id="State" name="State" placeholder="Enter your State">
+              </div>
+              <div class="form-group">
+                <label for="Address">Address</label>
+                <input type="Address" class="form-control" id="Address" name="Address" placeholder="Enter your Address">
+              </div>
+              <div class="form-group">
+                <label for="Pincode">Pincode</label>
+                <input type="Pincode" class="form-control" id="Pincode" name="Pincode" placeholder="Enter your Pincode Number">
+              </div>
+            <button type="button Submit" class="btn btn-primary">Submit</button>
+          </form>
+    </div>
+
+
+  </section>
+
+{% endblock body%}

@@ -1,0 +1,70 @@
+{% extends 'base.html'%} 
+{% block title%} Grievance Redressal {% endblock title%}
+
+{% block body%} 
+<!-- login up -->
+<section id="log">
+
+  <h1>Grievance Redressal</h1><br>
+  <div class="container">
+    <form method="post" action="/grievance">
+      {% csrf_token %}
+      <div class="row">
+        <div class="form-group col-4">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+        </div>
+        <div class="form-group col-4">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="reg_no@sggs.ac.in">
+        </div>
+        <div class="form-group col-4">
+          <label for="reg">Registration No.</label>
+          <input type="text" class="form-control" name="reg" id="reg" placeholder="Registration No.">
+        </div>
+        <div class="form-group col-4">
+          <label for="hostel">Hostel</label>
+          <select class="form-control" name="hostel" id="hostel" placeholder="reg_no@sggs.ac.in">
+            <option>Boys' Hostel</option>
+            <option>Girls' Hostel</option>
+          </select>
+        </div>
+        <div class="form-group col-4">
+          <label for="room">Room No.</label>
+          <input type="text" class="form-control" name="room" id="room" placeholder="room_no">
+        </div>
+        <div class="form-group col-4">
+          <label for="sub">Complaint regarding</label>
+        <select class="form-control" name="sub" id="sub" placeholder="reg_no@sggs.ac.in">
+          <option>Plumbing</option>
+          <option>Eclectric</option>
+          <option>Furniture</option>
+          <option>Electronic Devices</option>
+          <option>Other</option>
+        </select>
+        </div>
+        <div class="form-group col-12">
+          <label for="desc">Description</label>
+          <textarea class="form-control" name="desc" id="desc" rows="3"></textarea>
+        </div>
+        <button type="button submit" class="btn btn-outline-light">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+</section>
+
+{% endblock body%}
+
+
+
+
+   
+
+  
+
+
+
+ 

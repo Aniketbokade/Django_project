@@ -1,0 +1,212 @@
+body
+{
+  font-family: 'Noto Serif', serif;
+}
+
+hr
+{
+  border-style: none;
+  border-top-style: dotted;
+  border-top-color: #9CB4CC;
+  border-top-width: 7px;
+  width: 15%;
+}
+
+h1
+{
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+a
+{
+  color: grey;
+}
+
+.blog-2
+{
+  background-color: #cfd2cf;
+}
+
+.icon
+{
+  padding: 0 10px;
+}
+.icon:hover
+{
+  color: grey;
+}
+.card
+{
+  box-shadow:6px 6px 3px #9CB4CC;
+}
+/* navgation bar */
+
+.navbar-brand
+{
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav-item
+{
+  padding: 0 18px;
+  margin: 0 auto;
+}
+.navigation-hr
+{
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 3px;
+  width: auto;
+  margin: 0;
+}
+
+
+/* home 2 */
+
+#home-2
+{
+  padding: 3% 10%;
+}
+.home-2-text
+{
+  padding: 100px 100px 0 50px;
+}
+
+.img-1
+{
+  width: 75%;
+}
+
+/* home 3 */
+.home-3-img
+{
+  width: 60%;
+}
+.home-card-1
+{
+  margin: 50px;
+}
+.home-3-text
+{
+  padding: 150px 75px;
+}
+
+/* our team */
+
+#our-team
+{
+  text-align: center;
+  line-height: 5px;
+  padding: 3% 4%;
+}
+.team-icon
+{
+  border-radius: 100%;
+  width: 15rem;
+  margin: 20px;
+}
+.team-icon:hover
+{
+  background-color: grey;
+}
+
+/* login up */
+#log
+{
+  background-color: black;
+  padding: 7% 3%;
+  color: #fff;
+}
+
+.input
+{
+    border: 0px;
+    border-bottom: dotted;
+   background-color: black;
+   font-weight: 400 ;
+   color: grey;
+
+}
+
+/* testimonial */
+.carousel-item
+{
+  padding: 2% 20% 5%;
+}
+
+/* blogs */
+#Blogs
+{
+  padding: 5% 15%;
+}
+.blog-column
+{
+  margin: 30px 0;
+  padding: 0 50px;
+
+}
+.blog-1
+{
+  background-color: black;
+  color: #fff;
+}
+.see-more
+{
+  margin: 0 auto;
+}
+.blog-heading
+{
+  text-align: center;
+}
+
+
+
+/* Contact us */
+#contact-us
+{
+  background-color: black;
+  padding: 7% 3%;
+  color: #fff;
+}
+
+.contact-text
+{
+  color: #fff;
+  background-color: #000;
+  border-color: #fff;
+}
+
+/* Newsletter */
+.download-button
+{
+  margin: 30px 30px 0 0;
+}
+
+/* footer */
+.footer-column
+{
+  padding: 100px;
+}
+
+.footer-Newsletter
+{
+  padding: 100px 10px;
+}
+footer
+{
+  text-align: center;
+}
+
+
+/* for mobile and tablet */
+@media(max-width: 1028px)
+{
+  body
+  {
+    text-align: center;
+  }
+}
+.carousel .carousel-indicators li {background-color: red;}

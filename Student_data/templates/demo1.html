@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form">
+        <div>
+            <label for="FirstName">First Name: </label>
+            <br>
+            <input id="FirstName" type="text">
+        </div>
+        <div>
+            <label for="LastName">Last Name: </label>
+            <br>
+            <input id="LastName" type="text">
+        </div>
+        <div>
+            <button type="submit">Next Page</button>
+        </div>
+    </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const FirstName = document.getElementById('FirstName');
+        const LastName = document.getElementById('LastName');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const FirstNameValue = FirstName.value;
+            const LastNameValue = LastName.value;
+
+            localStorage.setItem('first-name',FirstNameValue);
+            localStorage.setItem('last-name',LastNameValue);
+
+            window.location.href = "demo2.html"
+        })
+    </script>
+
+</body>
+</html>
